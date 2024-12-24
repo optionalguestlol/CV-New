@@ -1,5 +1,5 @@
 header{
-    background-color: rgb(80, 159, 228);
+    background: linear-gradient(135deg, green, blue) ;
     color: black;
     position: sticky;
     top: 0;
@@ -15,21 +15,29 @@ body{
 }
 .logo{
     display: flex;
-    justify-content: center;
     gap: 20px;
-    align-items: center;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+    align-items: center; 
+}
+.logo h2{
+    font-family: "Sofia", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: aliceblue;
 }
 .logo img{
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 nav{
     width: 40%;
+    font-size: 1em;
 }
 ul{
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
+    padding-inline: 40px;
 }
 a{
     color: white;
@@ -40,7 +48,29 @@ a{
 a::after{
     content:"";
     position: absolute;
-    width: 100%;
+    width: 0;
     left: 0;
-    bottom: 6;
+    bottom: -3px;
+    height: 2px;
+    background-color: azure;
+    transition: width 0.4s ease;
+}
+a:hover::after{
+width: 100%;    
+}
+#home{
+    background: linear-gradient(0deg, rgba(0, 0, 255, 0.317), rgba(0, 0, 0, 0.333)),
+    url("./gb.webp");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: #000000 1px 0 10px;
 }
