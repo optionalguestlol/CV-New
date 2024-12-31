@@ -1,5 +1,5 @@
-header{
-    background: linear-gradient(135deg, green, blue) ;
+header {
+    background: linear-gradient(135deg, green, blue);
     color: black;
     position: sticky;
     top: 0;
@@ -7,46 +7,53 @@ header{
     justify-content: space-between;
     padding-inline: 40px;
     padding: 30px;
-} 
-body{
+}
+
+body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
 
 }
-.logo{
+
+.logo {
     display: flex;
-    gap: 20px;
-    align-items: center; 
+    gap: 40px;
+    align-items: center;
 }
-.logo h2{
+
+.logo h2 {
     font-family: "Sofia", sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     color: aliceblue;
 }
-.logo img{
+
+.logo img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
 }
-nav{
+
+nav {
     width: 40%;
     font-size: 1em;
 }
-ul{
+
+ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     padding-inline: 40px;
 }
-a{
+
+a {
     color: white;
     position: relative;
     text-decoration: none;
 }
 
-a::after{
-    content:"";
+a::after {
+    content: "";
     position: absolute;
     width: 0;
     left: 0;
@@ -55,12 +62,14 @@ a::after{
     background-color: azure;
     transition: width 0.4s ease;
 }
-a:hover::after{
-width: 100%;    
+
+a:hover::after {
+    width: 100%;
 }
-#home{
+
+#home {
     background: linear-gradient(0deg, rgba(0, 0, 255, 0.317), rgba(0, 0, 0, 0.333)),
-    url("./gb.webp");
+        url("./gb.webp");
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -74,3 +83,79 @@ width: 100%;
     font-weight: bold;
     text-shadow: #000000 1px 0 10px;
 }
+
+#about {
+    margin: 50px;
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow: 0.5px 0.5px 10px black;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: "Sofia", sans-serif;
+}
+
+.contact-skills,
+.about-me {
+    width: 50%;
+}
+
+.contactInfo {
+    padding-left: 40%;
+}
+
+.progression {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.progression-bar {
+    background-color: blue;
+    height: 10px;
+}
+
+.skills {
+    padding: 10px;
+}
+
+.skill {
+    margin: 15px;
+}
+
+.skill-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 25px;
+}
+#about h3{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#projects{ 
+   margin: 50px;
+   padding: 20px;
+}
+#projects h1{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0;
+}
+.project-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+}
+.project-card{  
+      margin: 1em;
+      padding: 1em;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px black;
+      font-family: monospace;
+}
+            
