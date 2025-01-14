@@ -1,12 +1,13 @@
 header {
     background: linear-gradient(135deg, green, blue);
-    color: black;
+    color: rgb(247, 243, 243);
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     padding-inline: 40px;
     padding: 30px;
+    height: 6vh;
 }
 
 body {
@@ -143,6 +144,10 @@ a:hover::after {
     text-align: center;
     margin-top: 0;
 }
+#projects h4{
+    text-align: center;
+    margin-top: 0;
+}
 .project-row{
     display: flex;
     justify-content: center;
@@ -158,4 +163,50 @@ a:hover::after {
       box-shadow: 0 0 10px black;
       font-family: monospace;
 }
-            
+#contact{
+    background: rgb(25, 129, 226);
+   padding: 70px;
+   justify-content: flex;
+   align-items: center;
+}
+.contact-card{
+    margin: 1em;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    width: auto;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.contact-form , .get-in-touch{
+    width: 50%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.get-in-touch ul{
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    line-height: 34px;
+    gap: 6px;
+}
+button{
+    background-color: blue;
+    color: white;
+    
+}
+button:hover{
+    background-color: rgb(88, 198, 235);
+    transition: 0.6s ease;
+}
+input, textarea{
+    padding: 20px;
+}
