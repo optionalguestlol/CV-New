@@ -7,7 +7,6 @@ header {
     justify-content: space-between;
     padding-inline: 40px;
     padding: 30px;
-    height: 6vh;
     
 }
 
@@ -107,14 +106,21 @@ a:hover::after {
     font-family: "Sofia", sans-serif;
 }
 
-
+.contact-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills{
+    width: 100%;
+}
 .contact-skills,
 .about-me {
     width: 50%;
 }
-
-.contactInfo {
-    padding-left: 40%;
+.contactInfo{
+    width: fit-content;
 }
 
 .progression {
@@ -188,16 +194,31 @@ a:hover::after {
     font-size: 3em;
 }
 
-@media screen and ( max-width: 800px) {
-    .about-me
+@media only screen and ( max-width: 800px) {
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #about{
+        flex-direction: column;
+    }
+    .contact-skills, .about-me{
+        width: 100%;
+    }
+
     .project-row{
         flex-wrap: wrap;
     }
     .contact-card{
         flex-wrap: wrap;
     }
-    
+    #contact ul {
+        font-size: 0.9em;
+    }
 }
+
+
 
 .contact-card{
     margin: 1em;
@@ -211,9 +232,10 @@ a:hover::after {
     justify-content: center;
     
     
+    
 }
 .contact-form , .get-in-touch{
-    width: 50%;
+    width: 100%;
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -221,26 +243,31 @@ a:hover::after {
     justify-content: center;
     font-size: 1.2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0.5px 0.5px 10px black;
-    border-radius: 10px;
-    background-color: aliceblue;
+     border-radius: 10px;
+   
+    
+
 }
 form{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+    width: 100%;
 }
-
-.get-in-touch ul{
+.get-in-touch{
+    display: flex;
+    align-items: center;
+    justify-content: column;
+  
+}
+    .get-in-touch ul{
     display: flex;
     flex-direction: column;
     font-size: larger;
-    line-height: 34px;
+    line-height: 60px;
     text-align: column;
-}
+    }
+  
 button{
     background-color: blue;
     color: white;
