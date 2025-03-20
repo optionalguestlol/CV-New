@@ -13,7 +13,7 @@ header {
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-
+    background-color: #000000;
 }
 
 .logo {
